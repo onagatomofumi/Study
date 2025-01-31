@@ -1,0 +1,64 @@
+body {
+    min-height: 100%;
+    height: 100%;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper {
+    width: 400px;
+    margin: 0 auto;
+}
+.header {
+    height: 100px;
+    background-color: burlywood;
+}
+.contens {
+    width: 400px;
+    height: 250px;
+}
+.blue {
+    width: 150px;
+    height: 250px;
+    background-color: aqua;
+    float: left;
+}
+.red {
+    width: 100px;
+    height: 150px;
+    background-color: brown;
+    float: right;
+}
+.right {
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+.right-top-left {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.green {
+    width: 150px;
+    height: 50px;
+    background-color: darkseagreen;
+    /* float: left; */
+}
+.pink {
+    width: 150px;
+    height: 100px;
+    background-color: darkorchid;
+    /* float: left; */
+}
+.yellow {
+    width: 250px;
+    height: 100px;
+    background-color: darkkhaki;
+}
+.fooder {
+    height: 100px;
+    background-color: mediumslateblue;
+}
