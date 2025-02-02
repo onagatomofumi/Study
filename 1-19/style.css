@@ -1,0 +1,88 @@
+body{
+    min-height: 100%;
+    height: 100%;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper{
+    width: 400px;
+    margin: auto;
+}
+.header{ 
+    width: 400px;
+    height: 100px;
+    background-color: burlywood;
+}
+.headboxs{
+    float: right;
+    width: 160px;
+    height: 60px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: white;
+}
+.boxs{
+    background-color:#97e6b5;
+    width: 40px;
+    height: 40px;
+  }
+.top1{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.top2{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.top3{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.contens{
+    width: 400px;
+    height: 250px;
+}
+.boxs2{
+    float: left;
+    width: 140px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: orchid;
+}
+.left{
+    float: left;
+    width: 150px;
+    height: 250px;
+    background-color: aqua;
+}
+.right{
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-color: chartreuse;
+}
+.rightboxs{
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: aliceblue;
+}
+.mid{
+    margin-top: 40px;
+}
+.foodder{
+    height: 100px;
+    background-color: blueviolet;
+}
+* {
+    margin: 0;
+    padding: 0;
+}

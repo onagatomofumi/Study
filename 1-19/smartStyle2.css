@@ -1,0 +1,48 @@
+@media screen and (max-width: 479px){
+    .wrapper{
+        width: 200px;
+        margin: auto;
+    }
+    .header{ 
+        width: 200px;
+        height: 200px;
+        background-color: burlywood;
+    }
+    .headboxs{
+        width: 60px;
+        height: 160px;
+        margin-top: 20px;
+        margin-right: 70px;
+    }
+    .top1{
+        float: none;
+    }
+    .top2{
+        float: none;
+    }
+    .top3{
+        float: none;
+    }
+    .contens{
+        width: 200px;
+        height: 100%;
+    }
+    .left{
+        float: none;
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+    }
+    .right{
+        width: 200px;
+        height: 200px;
+    }
+    .rightboxs{
+        width: 150px;
+        height: 50px;
+        margin-left: 30px;
+    }
+    .mid{
+        margin-top: 20px;
+    }
+}
