@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<head th:replace="common/head :: head_fragment(title = 'ユーザー情報一覧', scripts = ~{::script}, links = ~{::link})"></head>-->
+<body>
+  <div class="container">
+    <h1>タスク一覧</h1>
+    <div class="float-end">
+      <a th:href="@{/task/add}" class="btn btn-primary">新規登録はこちら</a>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>タスク</th>
+          <th>ステータス</th>
+          <th>開始日時</th>
+          <th>完了予定日</th>
+          <th>削除</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="task : ${tasklist}" th:object="${task}" class="align-middle">
+          <td th:text="*{id}"></td>
+          <td th:text="*{name}"></td>
+          <td th:text="*{status}"></td>
+          <td th:text="${#dates.format(task.startDate, 'yyyy/MM/dd')}"></td>
+          <td th:text="${#dates.format(task.endDate, 'yyyy/MM/dd')}"></td>
+          <td><a th:href="@{/task/{id}(id=*{id})}" class="btn btn-secondary">詳細</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
